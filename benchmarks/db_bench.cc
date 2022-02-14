@@ -1175,7 +1175,7 @@ namespace leveldb {
             delete[] arg;
 //            db_->WaitforAllbgtasks();
     if (method == &Benchmark::WriteRandom)
-      sleep(60); // wait for SSTable digestion
+      sleep(120); // wait for SSTable digestion
         }
 
         void Crc32c(ThreadState* thread) {
